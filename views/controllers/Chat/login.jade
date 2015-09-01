@@ -1,0 +1,16 @@
+div(class="login-form col-center mt-50")
+    h4(class="text-center mt-50 login-title")
+        |JetFramework and Socket.io testing interface
+    
+    div(class="avatar-list text-center mt-50")
+        - for(var i in avatars)
+            div(class="img-thumb", data-avatar="#{avatars[i]}")
+                img(src="#{urlTemplate.replace('{{ID}}', avatars[i])}")
+            
+    div(class="mt-30")
+        input(class="form-control input-lg chat-name-input", type="text", placeholder="Your name...?")
+    
+    div(class="btn-login-div mt-10 text-center")
+        button(type="button", class="btn btn-success btn-lg btn-login")
+            |Choose your avatar and then click here!
+    

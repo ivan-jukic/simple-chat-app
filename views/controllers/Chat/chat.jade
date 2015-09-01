@@ -1,0 +1,29 @@
+div(class="user-info")   
+   h1(class="text-center")
+      | &nbsp; Hi #{user.firstName}!
+   
+   div(class="text-center")
+      a(href="/logout", class="logout-link")
+         button(type="button", class="btn btn-success btn-circle logout-circle-btn")
+            span(class="glyphicon glyphicon-chevron-left")
+         | Logout
+      
+   div(class="user-image-wrapper text-center mt-30")
+      div(class="my-avatar")
+         img(src="#{urlTemplate.replace('{{ID}}', user.avatar)}")
+   
+div(class="chat-select-div #{!userList.length ? 'hidden' : ''}")
+   div(class="chat-list-title mt-10 text-center")
+      |Click on somebody to chat with that person...
+   div(class="mt-50")
+      ul(class="chat-select-list")
+         - for (var i in userList)
+            li(class="chat-select", id="chat-user-#{userList[i].userId}", data-id="#{userList[i].userId}", data-firstname="#{userList[i].firstName}")
+               div(class="user-avatar")
+                  img(src="#{urlTemplate.replace('{{ID}}', userList[i].avatar)}")
+               p(class="user-name")
+                  |#{userList[i].firstName}
+         
+div(class="no-one-online text-center mt-50 #{userList.length ? 'hidden' : ''}")
+   h3
+      |There is no one to chat with :(

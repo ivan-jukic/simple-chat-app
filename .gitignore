@@ -1,0 +1,27 @@
+## BOWER ##
+/static/external
+
+## NODE ##
+node_modules
+
+## OTHERS ##
+.DS_Store
+*.html
+
+##  vagrant  ##
+.vagrant
+
+##  vagrant  ##
+.idea/
+
+## CSS LESS generated files ##
+static/customer/js/modules/bootstrap/less/*.css
+
+config.js
+v8.log
+*.log
+build
+obj
+*.conf
+*.conf~
+.gitignore~

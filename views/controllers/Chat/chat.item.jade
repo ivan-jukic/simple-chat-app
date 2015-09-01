@@ -1,0 +1,5 @@
+li(class="chat-select", id="chat-user-#{user.userId}", data-id="#{user.userId}", data-firstname="#{user.firstName}")
+   div(class="user-avatar")
+      img(src="#{urlTemplate.replace('{{ID}}', user.avatar)}")
+   p(class="user-name")
+      |#{user.firstName}

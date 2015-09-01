@@ -9,7 +9,7 @@ Each user is assigned a temporary id, and all of his socket connection id's are 
 notified about an event, his socket id's are loaded from the Redis, and event is emitted to all of his active connections.
 This happens in all instances, as the user may be connected to more than one (user has opened multiple browser windows).
 
-A live example is available [here](http://ivanjukic.com/)
+A live example is available [here](http://ivanjukic.com/).
 
 *This app was not meant to be used for any production environments, as there are still bugs and it has not been tested
 properly.*
@@ -19,4 +19,4 @@ TODO:
 * Fix bugs
 * Add tests
 * Use angular.js for frontend
-* Optimize for mbile
+* Optimize for mobile

@@ -18,3 +18,5 @@ TODO:
 
 * Fix bugs
 * Add tests
+* Use angular.js for frontend
+* Optimize for mbile

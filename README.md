@@ -20,3 +20,7 @@ TODO:
 * Add tests
 * Use angular.js for frontend
 * Optimize for mobile
+
+## LICENCE
+
+Released under [MIT licence](http://mit-license.org/).
